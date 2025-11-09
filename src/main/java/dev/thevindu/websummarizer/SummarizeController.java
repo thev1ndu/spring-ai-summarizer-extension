@@ -1,9 +1,8 @@
 package dev.thevindu.websummarizer;
 
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/summarize")
@@ -12,4 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class SummarizeController {
     private final SummarizeService summarizeService;
 
+    @PostMapping("/process")
+    public ResponseEntity<String> processContent(@RequestBody SummarizeRequest request) {
+        String result = summarizeService.processContent(request);
+        return ResponseEntity.ok(result);
+    }
 }
