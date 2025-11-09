@@ -1,4 +1,4 @@
-package dev.thevindu.websummarizer;
+package dev.thevindu.readless;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

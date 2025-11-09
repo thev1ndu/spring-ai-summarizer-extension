@@ -1,10 +1,7 @@
-package dev.thevindu.websummarizer;
+package dev.thevindu.readless;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
-
-import javax.swing.text.AbstractDocument;
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -14,19 +11,19 @@ public class ResponseGemini {
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class Candidate {
+    public static class Candidate {
         private Content content;
     }
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class Content {
+    public static class Content {
         private List<Part> parts;
     }
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class Part {
+    public static class Part {
         private String text;
     }
 }

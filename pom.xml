@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.thevindu</groupId>
-    <artifactId>websummarizer</artifactId>
+    <artifactId>readless</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>websummarizer</name>
     <description>websummarizer</description>

@@ -1,11 +1,9 @@
-package dev.thevindu.websummarizer;
+package dev.thevindu.readless;
 
 import lombok.Data;
 
 @Data
-public class SummarizeRequest {
+public class ReadlessRequest {
     private String content;
     private String operation;
-
-
 }

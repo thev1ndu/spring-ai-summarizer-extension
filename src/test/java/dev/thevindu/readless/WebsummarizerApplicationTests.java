@@ -1,4 +1,4 @@
-package dev.thevindu.websummarizer;
+package dev.thevindu.readless;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
