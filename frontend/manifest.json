@@ -1,10 +1,29 @@
 {
-    "name": "Readless - AI powered Text Transformation Engine",
-    "description": "Hello Extensions of the world!",
-    "version": "1.0",
     "manifest_version": 3,
+    "name": "Readless",
+    "description": "AI powered Text Transformation Engine",
+    "version": "2.0",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "sidePanel",
+        "scripting"
+    ],
     "action": {
-      "default_popup": "hello.html",
-      "default_icon": "icon.png"
+      "default_title": "Readless"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://*/*",
+        "http://localhost:8080/*",
+        "<all_urls>"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
     }
   }
