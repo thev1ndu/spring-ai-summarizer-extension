@@ -1,7 +1,9 @@
-# ReadLess
+# Readless v2 Released
 
-ReadLess is an intelligent web summarizer and text-compression extension powered by Gemini AI.  
+Readless is an intelligent web summarizer and text-compression extension powered by Gemini AI.  
 It condenses lengthy articles, reports, or research papers into precise, high-density summaries while retaining key insights and contextual integrity.
+
+[![Screenshot-2025-12-18-at-20-22-31.png](https://i.postimg.cc/2yrQXv61/Screenshot-2025-12-18-at-20-22-31.png)](https://postimg.cc/vg2x445y)
 
 ---
 
